@@ -1,23 +1,18 @@
 # Diego Ferreira Caetano - Samples
 
-# Joke Norris
-
-# Kotlin + Dagger  with Android Architecture Components
+# Kotlin + Koin  with Android Architecture Components
 - Kotlin
-- Dagger
-- MVVM
-- RxKotlin
-- Navigation
-- Clean Code
+- Koin
 - Lifecycle-aware components
 - ViewModels
 - LiveData
-- Androidx
+- androidx
 - Android Data Binding
 - Retrofit for REST api communication
 - Glide for image loading
-- Espresso for UI tests
-- Mockito for mocking in tests
+- Timber for logging
+- espresso for UI tests
+- mockito for mocking in tests
 
 
 License

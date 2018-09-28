@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Jokes Norris</string>
+    <string name="category">Category</string>
+    <string name="mokeJoke">MySpace actually isn\'t your space, it\'s Chuck\'s (he just lets you use it).</string>
+    <string name="mokeUrl">https://api.chucknorris.io/jokes/rrt0vtiiqyi66shbp4qhiw</string>
+    <string name="icon">icon</string>
+</resources>
