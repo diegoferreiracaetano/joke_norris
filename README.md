@@ -18,6 +18,11 @@
 
 <img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg" width="300" />         <img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/detail.jpg" width="300" />
 
+Credits
+-------
+API https://github.com/chucknorris-io
+Guia do Bolso
+
 License
 -------
 
