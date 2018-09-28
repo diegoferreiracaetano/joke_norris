@@ -2,6 +2,7 @@
 
 # Kotlin + Dagger + RxKotlin  with Android Architecture Components
 - Kotlin
+- MVVM
 - Dagger
 - RxKotlin
 - Navigation
