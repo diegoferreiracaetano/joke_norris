@@ -14,7 +14,7 @@
 - espresso for UI tests
 - mockito for mocking in tests
 
-<img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg" width="300" /><img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg" width="250" />         <img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/detail.jpg" width="250" />
 
 License
 -------
