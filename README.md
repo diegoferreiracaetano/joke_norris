@@ -5,15 +5,19 @@
 # Kotlin + Dagger  with Android Architecture Components
 - Kotlin
 - Dagger
+- MVVM
+- RxKotlin
+- Navigation
+- Clean Code
 - Lifecycle-aware components
 - ViewModels
 - LiveData
-- androidx
+- Androidx
 - Android Data Binding
 - Retrofit for REST api communication
 - Glide for image loading
-- espresso for UI tests
-- mockito for mocking in tests
+- Espresso for UI tests
+- Mockito for mocking in tests
 
 
 License
