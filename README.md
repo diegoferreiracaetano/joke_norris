@@ -20,8 +20,7 @@
 
 Credits
 -------
-API https://github.com/chucknorris-io
-Guia do Bolso
+- API https://github.com/chucknorris-io
 
 License
 -------
