@@ -13,6 +13,7 @@
 - Timber for logging
 - espresso for UI tests
 - mockito for mocking in tests
+<img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg" width="200" />
 
 ![](https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg | width=100)
 ![](https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/detail.jpg | width=100)
