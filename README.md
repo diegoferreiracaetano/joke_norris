@@ -13,10 +13,6 @@
 - Timber for logging
 - espresso for UI tests
 - mockito for mocking in tests
-<img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg" width="200" />
-
-![](https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg | width=100)
-![](https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/detail.jpg | width=100)
 
 License
 -------
@@ -41,3 +37,6 @@ the License.
 Linkedin
 -------
 https://www.linkedin.com/in/diego-ferreira-caetano/
+
+<img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg" width="300" />
+<img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg" width="300" />
