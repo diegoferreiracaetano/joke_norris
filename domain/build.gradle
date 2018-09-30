@@ -36,7 +36,8 @@ dependencies {
 
     implementation "javax.inject:javax.inject:$libs.javaxInject"
 
-    testImplementation "junit:junit:$test.junit"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$test.junit"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$test.junit"
     androidTestImplementation "androidx.test:runner:$test.runner"
     androidTestImplementation "androidx.test.espresso:espresso-core:$test.espresso"
 }

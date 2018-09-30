@@ -66,7 +66,8 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$libs.loggingInterceptor"
     implementation "com.github.bumptech.glide:glide:$libs.glide"
 
-    testImplementation "junit:junit:$test.junit"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$test.junit"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$test.junit"
     androidTestImplementation "androidx.test:runner:$test.runner"
     androidTestImplementation "androidx.test.espresso:espresso-core:$test.espresso"
     testImplementation "androidx.arch.core:core-testing:$libs.extensions"
@@ -76,6 +77,7 @@ dependencies {
     api project(path: ':data')
     api project(path: ':domain')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
 
 
 }

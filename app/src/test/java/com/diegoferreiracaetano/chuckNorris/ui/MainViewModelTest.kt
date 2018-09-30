@@ -25,6 +25,7 @@ class MainViewModelTest {
 
     private lateinit var viewModel: MainViewModel
 
+
     @get:Rule
     var rule: TestRule = InstantTaskExecutorRule()
 
@@ -32,7 +33,7 @@ class MainViewModelTest {
     @Throws(Exception::class)
     fun setUp() {
         MockitoAnnotations.initMocks(this)
-
+        `when`(getListCategoriesInteractor.execute(any(GetListCategoriesInteractor.Request::class.java))).thenReturn(Flowable.empty())
         viewModel = MainViewModel(getListCategoriesInteractor)
     }
 
