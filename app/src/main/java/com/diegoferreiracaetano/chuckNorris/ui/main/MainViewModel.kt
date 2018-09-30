@@ -17,6 +17,9 @@ class MainViewModel
     val loading = MutableLiveData<Boolean>()
     val empty = MutableLiveData<Boolean>()
 
+    init {
+        getCategories()
+    }
 
     fun getCategories() {
 

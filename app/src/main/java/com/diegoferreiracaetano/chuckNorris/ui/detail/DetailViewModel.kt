@@ -12,28 +12,33 @@ class DetailViewModel
 @Inject constructor(private val getJokeInteractor: GetJokeInteractor) : ViewModel() {
 
     private val disposable = CompositeDisposable()
+    val category = MutableLiveData<String>()
     val joke = MutableLiveData<Joke>()
     val error = MutableLiveData<Throwable>()
     val loading = MutableLiveData<Boolean>()
     val empty = MutableLiveData<Boolean>()
 
-    fun getJoke(category: String) {
 
-        loading.postValue(true)
+    fun getJoke(cat: String) {
 
-        disposable.add(getJokeInteractor.execute(GetJokeInteractor.Request(category))
-                .subscribeBy (
-                        onSuccess = {
-                            joke.postValue(it)
-                            loading.postValue(false)
-                            empty.postValue(false)
-                        },
-                        onError =  {
-                            loading.postValue(false)
-                            error.postValue(it) },
-                        onComplete = {
-                            empty.postValue(true)
-                        }))
+        if(cat != category.value) {
+            loading.postValue(true)
+            category.postValue(cat)
+            disposable.add(getJokeInteractor.execute(GetJokeInteractor.Request(cat))
+                    .subscribeBy(
+                            onSuccess = {
+                                joke.postValue(it)
+                                loading.postValue(false)
+                                empty.postValue(false)
+                            },
+                            onError = {
+                                loading.postValue(false)
+                                error.postValue(it)
+                            },
+                            onComplete = {
+                                empty.postValue(true)
+                            }))
+        }
     }
 
     override fun onCleared() {

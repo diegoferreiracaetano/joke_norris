@@ -12,7 +12,6 @@ import androidx.navigation.Navigation
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.diegoferreiracaetano.chuckNorris.R
 import com.diegoferreiracaetano.chuckNorris.databinding.FragmentMainBinding
-import com.diegoferreiracaetano.chuckNorris.ui.detail.DetailFragment
 import com.diegoferreiracaetano.chuckNorris.ui.main.adapter.CategoriesListAdapter
 import com.diegoferreiracaetano.chuckNorris.util.lazyThreadSafetyNone
 import dagger.android.support.DaggerFragment
@@ -43,7 +42,6 @@ class MainFragment : DaggerFragment(),CategoriesListAdapter.Callbacks, SwipeRefr
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         swipeLayout.setOnRefreshListener(this);
-        viewModel?.getCategories()
     }
 
     override fun onRefresh() {
@@ -52,7 +50,7 @@ class MainFragment : DaggerFragment(),CategoriesListAdapter.Callbacks, SwipeRefr
 
     override fun onItemClick(view: View, item: String) {
         val bundle = Bundle()
-        bundle.putString(DetailFragment.ARG_TYPE, item)
+        bundle.putString("category", item)
         Navigation.findNavController(view).navigate(R.id.action_next, bundle)
     }
 }

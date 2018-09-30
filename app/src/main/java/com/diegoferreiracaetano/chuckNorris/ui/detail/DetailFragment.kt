@@ -26,7 +26,7 @@ class DetailFragment : DaggerFragment() {
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
     private val viewModel by lazyThreadSafetyNone {
-        activity?.let { ViewModelProviders.of(it, viewModelFactory).get(DetailViewModel::class.java) }
+        ViewModelProviders.of(activity!!, viewModelFactory).get(DetailViewModel::class.java)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -40,15 +40,12 @@ class DetailFragment : DaggerFragment() {
         return binding.root
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        DetailFragmentArgs.fromBundle(arguments).let {
+            (activity as MainActivity).supportActionBar?.title = it.category.capitalize()
+            viewModel.getJoke(it.category)
+        }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        (activity as MainActivity).supportActionBar?.title = getCategory()
-        viewModel?.getJoke(getCategory())
     }
-
-    private fun getCategory() :String{
-        return getArguments()!!.getString(ARG_TYPE)
-    }
-
 }

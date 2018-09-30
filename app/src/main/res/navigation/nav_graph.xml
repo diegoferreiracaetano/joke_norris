@@ -20,6 +20,6 @@
         android:name="com.diegoferreiracaetano.chuckNorris.ui.detail.DetailFragment"
         android:label="@string/category"
         tools:layout="@layout/fragment_detail" >
-       <argument android:name="categoryParam" app:argType="string" android:defaultValue="dev" />
+       <argument android:name="category" app:argType="string" android:defaultValue="dev" />
     </fragment>
 </navigation>

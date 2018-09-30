@@ -37,10 +37,10 @@ object BindingAdapters {
     }
 
     @JvmStatic
-    @BindingAdapter("roundCategory")
-    fun RoundedLetterView.roundCategory(category: String) {
-        this.backgroundColor = ColorUtils.getRandomMaterialColor();
-        this.titleText = category.take(1)
+    @BindingAdapter("roundColor")
+    fun RoundedLetterView.roundColor(s: String) {
+        this.backgroundColor = ColorUtils.randomColor;
+        this.titleText = s.take(1)
     }
 
     @JvmStatic
