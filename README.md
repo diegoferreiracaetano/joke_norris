@@ -1,8 +1,11 @@
 # Diego Ferreira Caetano - Samples: Joke Norris 
 
-# Batata, Batata, Batata
-
 # Kotlin + Dagger + RxKotlin  with Android Architecture Components
+
+<img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/chuck.jpeg" width="300" />
+
+
+# Components
 - Kotlin
 - MVVM
 - Dagger
@@ -18,6 +21,8 @@
 - Glide for image loading
 - espresso for UI tests
 - mockito for mocking in tests
+
+
 
 <img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/list.jpg" width="300" />         <img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/detail.jpg" width="300" />
 
