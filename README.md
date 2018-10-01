@@ -2,7 +2,7 @@
 
 # Kotlin + Dagger + RxKotlin  with Android Architecture Components
 
-<img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/chuck.jpeg" width="300" />
+<img src="https://raw.githubusercontent.com/diegoferreiracaetano/joke_norris/master/img/chuck.jpg" width="300" />
 
 
 # Components
