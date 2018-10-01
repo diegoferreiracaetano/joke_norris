@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:onRefreshListener="@{() -> viewModel.getCategories()}"
+        app:onRefreshListener="@{() -> viewModel.retry()}"
         app:refreshing="@{viewModel.loading}">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/list_categories"

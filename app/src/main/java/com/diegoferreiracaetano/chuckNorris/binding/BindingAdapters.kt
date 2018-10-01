@@ -39,7 +39,7 @@ object BindingAdapters {
     @JvmStatic
     @BindingAdapter("roundColor")
     fun RoundedLetterView.roundColor(s: String) {
-        this.backgroundColor = ColorUtils.randomColor;
+        this.backgroundColor = ColorUtils.parse(s[0]);
         this.titleText = s.take(1)
     }
 

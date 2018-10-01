@@ -21,6 +21,10 @@ class MainViewModel
         getCategories()
     }
 
+    fun retry(){
+        getCategories()
+    }
+
     fun getCategories() {
 
         loading.postValue(true)

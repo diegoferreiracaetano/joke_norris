@@ -18,10 +18,13 @@ class DetailViewModel
     val loading = MutableLiveData<Boolean>()
     val empty = MutableLiveData<Boolean>()
 
+    fun retry(cat: String){
+         getJoke(cat,true)
+    }
 
-    fun getJoke(cat: String) {
+    fun getJoke(cat: String, retry:Boolean = false) {
 
-        if(cat != category.value) {
+        if(cat != category.value || retry) {
             loading.postValue(true)
             category.postValue(cat)
             disposable.add(getJokeInteractor.execute(GetJokeInteractor.Request(cat))
